@@ -1,11 +1,4 @@
 1.
-problem: Range Sum of Sorted Subarray Sums
-https://leetcode.com/problems/range-sum-of-sorted-subarray-sums/
-solution:
-(must read)
-https://leetcode.com/problems/range-sum-of-sorted-subarray-sums/discuss/2464381/C%2B%2B-binary-search-constant-space-oror-Comments-oror-Thought-process
-
-2. 
 problems:
 https://leetcode.com/problems/check-if-all-the-integers-in-a-range-are-covered/
 solution:
