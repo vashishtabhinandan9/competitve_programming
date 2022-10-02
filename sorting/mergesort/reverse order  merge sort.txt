@@ -1,0 +1,4 @@
+problem: https://leetcode.com/problems/merge-sorted-array/
+
+
+solution:https://leetcode.com/problems/merge-sorted-array/discuss/550278/C%2B%2B-O(n)-time-O(1)-space-highly-commented-0ms-stay-home-flatten-the-curve-socially-distance
