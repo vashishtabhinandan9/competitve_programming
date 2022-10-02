@@ -5,9 +5,10 @@ solution:
 (must read)
 https://leetcode.com/problems/range-sum-of-sorted-subarray-sums/discuss/2464381/C%2B%2B-binary-search-constant-space-oror-Comments-oror-Thought-process
 
-2. 
-problems:
-https://leetcode.com/problems/check-if-all-the-integers-in-a-range-are-covered/
+
+2.
+problem:https://leetcode.com/problems/check-if-all-the-integers-in-a-range-are-covered/
+
 solution:
  bool isCovered(vector<vector<int>>& ranges, int left, int right) {
         int mp[52]={};
