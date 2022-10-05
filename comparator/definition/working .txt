@@ -1,0 +1,25 @@
+
+
+and think of this as bubble sort
+for(int i=0:i<n;i==)
+for(j=0;j<n-1-i;j++)
+if(a[j]>a[j+1]) then swap 
+
+so way it work with comprator is a[j] and a[j+1] send to comprator and there we check 
+
+
+bool comp(pair<int,int>p,pair<int,int>q){
+    if(p.second==q.second){//second is the frequency while first is the value
+    //if frequency is same then sort by value
+    return p.first<q.first;//how it works
+    /**
+     * if (first < second) holds true then no swap else swap . so swap happens when false is returned .  
+     * 
+    //else if sort by freequency 
+    return p.second<q.second;
+    }
+}
+
+
+vector<pair<int,int>> v
+
