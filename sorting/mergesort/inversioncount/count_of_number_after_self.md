@@ -57,7 +57,7 @@ so here also we apply merge sort technique on this
    
     i     j
     0   1 2 3 (index)
-    5   6 3 2  (if i take it in decreasing order then i can say 5 4 3 2)
+    5   6 3 2  (if i take it in decreasing order then i can say 5 4 3 2).
    
     if(arr[i] > arr[j]) i.e 5 > 3 (true) so in answer at index 0 increase
     but since hm array ko hm decreasing order main merge kr rhe hain,
