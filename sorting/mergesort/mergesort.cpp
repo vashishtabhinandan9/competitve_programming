@@ -3,15 +3,6 @@
 using namespace std;
 //1st method
 
-int main(){
-   int n;
-       cin>>n;
-       vector<int> arr(n,0);
-       for(int i=0;i<n;i++) cin>>arr[i];
-
-       mergeSort(arr,0,n-1);
-    return 0;
-}
 
 void inPlaceMerge(vector<int> &nums, int low, int mid, int high) {
 	if (low >= high) return;
@@ -49,4 +40,20 @@ void mergeSort(vector<int> &nums, int low, int high) {
 	mergeSort(nums, mid + 1, high);
 	inPlaceMerge(nums, low, mid, high);
     outPlaceMerge(nums, low, mid, high);
+}
+void printarray(vector<int>& arr){
+       for(int i=0;i<arr.size();i++) cout<<arr[i];
+       }
+
+int main(){
+   int n;
+       cin>>n;
+       vector<int> arr(n,0);
+       for(int i=0;i<n;i++) cin>>arr[i];
+
+       mergeSort(arr,0,n-1);
+
+       printarray(arr);
+       
+    return 0;
 }
