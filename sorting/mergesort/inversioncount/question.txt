@@ -1,0 +1,6 @@
+problem:
+https://leetcode.com/problems/reverse-pairs/
+solution:
+https://leetcode.com/problems/reverse-pairs/discuss/845952/C%2B%2B-Using-Merge-Sort
+https://leetcode.com/problems/reverse-pairs/discuss/2195228/C%2B%2B-Fastest-solution-oror-Striver-oror-Best-approach
+

@@ -2,7 +2,9 @@
 #include<iostream>
 using namespace std;
 //1st method
-
+/**
+ * this uses insertion sort to merge array 
+*/
 
 void inPlaceMerge(vector<int> &nums, int low, int mid, int high) {
 	if (low >= high) return;
@@ -11,7 +13,7 @@ void inPlaceMerge(vector<int> &nums, int low, int mid, int high) {
 		if (nums[l] <= nums[r]) l++;
 		else {
 			int val = nums[r];
-			for (int k = r++; k > l; k--)
+			for (int k = r++; k > l; k--)//insertion sort
 				nums[k] = nums[k - 1];
 			nums[l++] = val;
 			mid++;
@@ -19,6 +21,10 @@ void inPlaceMerge(vector<int> &nums, int low, int mid, int high) {
 	}
 }
 
+
+/**
+ * uses extra space to merge
+*/
 void outPlaceMerge(vector<int> &nums, int low, int mid, int high) {
 	if (low >= high) return;
 	int l = low, r = mid + 1, k = 0, size = high - low + 1;

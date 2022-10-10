@@ -1,0 +1,49 @@
+question:
+https://www.geeksforgeeks.org/find-duplicates-in-on-time-and-constant-extra-space/
+
+Given an array of n elements that contains elements from 0 to n-1, 
+with any of these numbers appearing any number of times. 
+Find these repeating numbers in O(n) and using only constant memory space.
+
+answer:
+https://www.geeksforgeeks.org/find-duplicates-in-on-time-and-constant-extra-space/
+
+1st method:use hashmap
+
+2nd method: make the numbers negative. we make the arr[arr[i]] negative 
+and traverse again to see which is positve as making an element nigative twice will make it positive
+so that index will be answer
+
+3rd method:
+/**
+But there is a catch, the numbers in the array are from 0 to n-1, 
+and the input array has length n. So, the input array can be used as a HashMap. 
+While Traversing the array,
+if an element ‘a’ is encountered then increase the value of a%n‘th element by n.
+The frequency can be retrieved by dividing the a % n’th element by n.
+**/
+
+// C++ code to find
+// duplicates in O(n) time
+#include <bits/stdc++.h>
+using namespace std;
+
+int main()
+{
+	int numRay[] = { 0, 4, 3, 2, 7, 8, 2, 3, 1 };
+	int arr_size = sizeof(numRay) / sizeof(numRay[0]);
+	// count the frequency
+	for (int i = 0; i < arr_size; i++) {
+		numRay[numRay[i] % arr_size]
+			= numRay[numRay[i] % arr_size] + arr_size;
+	}
+	cout << "The repeating elements are : " << endl;
+	for (int i = 0; i < arr_size; i++) {
+		if (numRay[i] >= arr_size * 2) {
+			cout << i << " " << endl;
+		}
+	}
+	return 0;
+}
+
+// This code is contributed by aditya kumar (adityakumar129)
