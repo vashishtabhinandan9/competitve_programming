@@ -1,0 +1,13 @@
+question:
+https://leetcode.com/problems/maximum-points-you-can-obtain-from-cards/
+
+
+answer:
+https://leetcode.com/problems/maximum-points-you-can-obtain-from-cards/discuss/2198002/C%2B%2B-Solution-Using-Sliding-Window
+
+int maxScore(vector<int>& cp, int k) {
+	int sum = accumulate(begin(cp), begin(cp) + k, 0), ans = sum;
+	for(int l(k-1), r(size(cp) - 1); l >= 0; l--, r--)
+		ans = max(ans, sum += (cp[r] - cp[l]));
+	return ans;
+}

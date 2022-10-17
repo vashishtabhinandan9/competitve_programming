@@ -1,0 +1,51 @@
+question:
+Given an array of size N filled with numbers from 1 to N-1 in random order. The array has only one repetitive element. The task is to find the repetitive element
+
+answer:
+
+1st aproach: floyd cycle detection
+
+Use two pointers the fast and the slow. The fast one goes forward two steps each time, while the slow one goes only step each time. They must meet the same item when slow==fast. 
+
+In fact, they meet in a circle, the duplicate number must be the entry point of the circle when visiting the array from array[0]. 
+
+Next we just need to find the entry point. We use a point(we can use the fast one before) to visit from the beginning with one step each time, do the same job to slow. When fast==slow, they meet at the entry point of the circle. 
+
+Follow the below steps to solve the problem:
+
+*Declare two integer pointers as slow and fast
+*Move the slow pointer one time and fast pointer two times, until slow is not equal to fast
+*Once they are equal then again start the fast pointer from the start of the array
+*Move both the pointers, one step at a time until both of them are equal
+*Return slow or fast pointer as the answer
+
+int findDuplicate(vector<int>& nums)
+{
+    int slow = nums[0];
+    int fast = nums[0];
+ 
+    do {
+        slow = nums[slow];
+        fast = nums[nums[fast]];
+    } while (slow != fast);
+ 
+    fast = nums[0];
+    while (slow != fast) {
+        slow = nums[slow];
+        fast = nums[fast];
+    }
+ 
+    return slow;
+}
+
+
+
+2nd approach : using xor
+
+The idea is based on the fact that x ^ x = 0 and if x ^ y = z then x ^ z = y
+
+Follow the below steps to solve the problem:
+
+*Compute XOR of elements from 1 to n-1.
+*Compute XOR of array elements.
+*XOR of the above two would be our result.
