@@ -1,9 +1,0 @@
-
-question:
-Given two sorted arrays nums1 and nums2 of size m and n respectively, return the median of the two sorted arrays.
-The overall run time complexity should be O(log (m+n)).
-
-answer:
-https://leetcode.com/problems/median-of-two-sorted-arrays/discuss/2651020/C%2B%2B-oror-SOLUTION
-
-https://www.geeksforgeeks.org/median-of-two-sorted-arrays-of-different-sizes/
