@@ -1,0 +1,53 @@
+ques1:
+https://www.geeksforgeeks.org/check-divisibility-large-number-999/
+
+ans1:
+A number is divisible by 999 if sum of its 3-digit-groups 
+(if required groups are formed by appending a 0s at the beginning) 
+is divisible by 999.
+
+algorithm:
+A simple and efficient method is to take input in form of string
+(make its length in form of 3*m by adding 0 to left of number if required) and then you
+have to add the digits in blocks 
+of three from right to left until it become a 3 digit number and if that result is 999 
+we can say that number is divisible by 999.
+
+As in the case of “divisibility by 9” we check that sum of all digit is divisible by 9 or not,
+the same thing follows within the case of divisibility by 999. We sum up all 3-digits group from
+right to left and check whether the final result is 999 or not.
+
+// function to check divisibility
+bool isDivisible999(string num)
+{
+    int n = num.length();
+    if (n == 0 && num[0] == '0')
+       return true;
+ 
+    // Append required 0s at the beginning.
+    if (n % 3 == 1)
+       num = "00" + num;
+    if (n % 3 == 2)
+       num = "0" + num;
+ 
+    // add digits in group of three in gSum
+    int gSum = 0;
+    for (int i = 0; i<n; i++)
+    {
+        // group saves 3-digit group
+        int group = 0;
+        group += (num[i++] - '0') * 100;
+        group += (num[i++] - '0') * 10;
+        group += num[i] - '0';
+        gSum += group;
+    }
+ 
+    // calculate result till 3 digit sum
+    if (gSum > 1000)
+    {
+        num = to_string(gSum);
+        n = num.length();
+        gSum = isDivisible999(num);
+    }
+    return (gSum == 999);
+}

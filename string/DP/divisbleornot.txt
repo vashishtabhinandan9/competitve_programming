@@ -1,0 +1,5 @@
+ques1 :
+https://www.geeksforgeeks.org/number-substrings-divisible-8-not-3/
+
+ques:2
+https://www.geeksforgeeks.org/number-substrings-divisible-6-string-integers/

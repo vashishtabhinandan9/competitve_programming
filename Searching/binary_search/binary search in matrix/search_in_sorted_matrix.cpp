@@ -1,0 +1,23 @@
+/*
+https://www.geeksforgeeks.org/search-element-sorted-matrix/
+
+question:
+https://leetcode.com/problems/search-a-2d-matrix-ii/
+
+solution:
+
+https://leetcode.com/problems/search-a-2d-matrix-ii/discuss/2324616/JavaC%2B%2B-FULL-VISUALL-explanation
+
+
+Things you can add to improve the approach idea :
+Since we always look for some linearity in the search space when doing binary search ,
+ we realise that only [0][m-1] || [n-1][0] are such positions which can help us achieve that.
+We fail to achieve it with [0][0] and [n-1][m-1] since in [0][0] all the elements to the bottom 
+are also greater and so in the column, vice versa for [n-1][m-1].
+Great solution btw, upvoted.
+
+
+The simple idea is to remove a row or column in each comparison
+ until an element is found. Start searching from the top-right corner of the matrix.
+*/
+
