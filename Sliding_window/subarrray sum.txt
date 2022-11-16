@@ -17,4 +17,6 @@ Follow the steps given below to implement the approach:
 and update start as, start++.
 *If the currentSum is equal to given sum, print the subarray and break the loop.
 
+similar question:
 
+https://www.geeksforgeeks.org/find-the-smallest-window-in-a-string-containing-all-characters-of-another-string/
