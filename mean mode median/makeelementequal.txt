@@ -1,0 +1,7 @@
+question:
+ https://leetcode.com/problems/minimum-moves-to-equal-array-elements-ii/
+https://leetcode.com/problems/minimum-moves-to-equal-array-elements-ii/discuss/2215732/C%2B%2B-oror-3-Approaches-oror-Full-Explanation
+
+ques:
+https://leetcode.com/problems/minimum-cost-to-make-array-equal/
+https://leetcode.com/problems/minimum-cost-to-make-array-equal/discuss/2734166/Binary-Search-C%2B%2B

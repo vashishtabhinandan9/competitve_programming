@@ -1,0 +1,15 @@
+question:1
+https://www.geeksforgeeks.org/count-number-of-substrings-with-exactly-k-distinct-characters/
+https://leetcode.com/discuss/interview-question/370157
+solution:
+https://leetcode.com/playground/AzGLdhCm
+https://leetcode.com/problems/subarrays-with-k-different-integers/discuss/1604221/C%2B%2B-sliding-window-hints-intuition-explained-commented-code
+
+
+
+question:2
+https://www.geeksforgeeks.org/find-the-smallest-window-in-a-string-containing-all-characters-of-another-string/
+
+
+question:3
+https://www.geeksforgeeks.org/smallest-window-contains-characters-string/
