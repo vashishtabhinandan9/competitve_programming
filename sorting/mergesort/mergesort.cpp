@@ -13,10 +13,13 @@ void inPlaceMerge(vector<int> &nums, int low, int mid, int high) {
 		if (nums[l] <= nums[r]) l++;
 		else {
 			int val = nums[r];
-			for (int k = r++; k > l; k--)//insertion sort
+			for (int k = r; k > l; k--)//insertion sort
 				nums[k] = nums[k - 1];
-			nums[l++] = val;
+			nums[l] = val;
 			mid++;
+			l++;
+			r++;
+			
 		}
 	}
 }
